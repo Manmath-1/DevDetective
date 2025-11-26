@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Header -->
+            <header class="heading-container">
+                <h1>DevDetective</h1>
+                <button class="btn-mode">Dark<img src="./assets/moon-icon.svg"></button>
+            </header>
+
+            <main>
+            <!-- Searching  -->
+            <div class="search-container">
+                <input type="text" placeholder="Enter a Github Username" id="input" required autofocus>
+                  <div class="error">
+                     <p id="noResults">No Search Results</p>
+                  </div>
+                  <button class="btn-search">Search</button>
+            </div>
+
+            <!-- UserInfo -->
+            <div class="userInfo-container">
+                <!-- Image , profileName, Joining -->
+                <div class="profileinfo">
+                    <div class="imgInfo">
+                        <img src="" alt="" loading="lazy" data-profilepic>
+                    </div>
+                    <div class="profileName">
+                        <div class="nameInfo">
+                            <h2 data-name></h2>
+                            <a href="" target="_blank" rel="noopener noreferrer" data-username></a>
+                        </div>
+                        <p data-joining></p>
+                    </div>
+                </div>
+
+                <!-- Profile Description -->
+                <div class="userDesc">
+                    <p data-description>This profile has no bio</p>
+                </div>
+
+                <!-- User Stats  -->
+                <div class="stats-container">
+                    <div class="statsInfo">
+                        <p>Repos</p>
+                        <a href="" data-repo></a>
+                    </div>
+                    <div class="statsInfo">
+                        <p>Followers</p>
+                        <a href="" data-followers></a>
+                    </div>
+                    <div class="statsInfo">
+                        <p>Following</p>
+                        <a href="" data-following></a>
+                    </div>
+                </div>
+
+                <!-- User Social Media and other details -->
+                <div class="social-container">
+                    <div class="socialInfo">
+                        <img src="./assets/location-icon.svg" alt="Location">
+                        <a href="" data-location>Not Available</a>
+                    </div>
+                    <div class="socialInfo">
+                        <img src="./assets/website-icon.svg" alt="Website">
+                        <a href="" data-website>Not Available</a>
+                    </div>
+                    <div class="socialInfo">
+                        <img src="./assets/twitter-icon.svg" alt="Twitter">
+                        <a href="" data-twitter>Not Available</a>
+                    </div>
+                    <div class="socialInfo">
+                        <img src="./assets/company-icon.svg" alt="Company">
+                        <a href="" data-company>Not Available</a>
+                    </div>
+                </div>
+
+            </div>
+            </main>
+
+        </div>
+    </div>
+</body>
+
+<!-- JS -->
+<script src="script.js"></script>
+</html>
