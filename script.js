@@ -1,4 +1,6 @@
 const modeBtn = document.querySelector(".btn-mode");
+const modeText = modeBtn.querySelector("#modeText");
+const modeIcon = modeBtn.querySelector("#modeIcon");
 const searchForm = document.querySelector("[data-searchForm]");
 const searchInput = document.querySelector("[data-input]");
 const noResult = document.querySelector(".error");
