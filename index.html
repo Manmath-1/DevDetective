@@ -39,24 +39,29 @@
         <div class="container">
             <!-- Header -->
             <header class="heading-container">
-                <h1>DevDetective</h1>
-                <button class="btn-mode">Dark<img src="./assets/moon-icon.svg"></button>
+                <h1 class="title">DevDetective</h1>
+                <div class="btn-mode">
+                    <p id="modeText">dark</p>
+                    <div class="iconContainer">
+                        <img src="./assets/moon-icon.svg" loading="lazy" id="modeIcon">
+                    </div>
+                </div>
             </header>
 
             <main>
             <!-- Searching  -->
-            <div class="search-container">
-                <input type="text" placeholder="Enter a Github Username" id="input" required autofocus>
-                  <div class="error">
-                     <p id="noResults">No Search Results</p>
-                  </div>
-                  <button class="btn-search">Search</button>
-            </div>
+            <form class="search-container" data-searchForm type="submit">
+                <input type="text" placeholder="Enter a Github Username" data-input id="input" required autofocus>
+                <div class="error">
+                    <p id="noResults" data-noresult>No Search Results</p>
+                </div>
+                <button class="btn-search">Search</button>
+            </form>
 
             <!-- UserInfo -->
             <div class="userInfo-container">
                 <!-- Image , profileName, Joining -->
-                <div class="profileinfo">
+                <div class="profileInfo">
                     <div class="imgInfo">
                         <img src="" alt="" loading="lazy" data-profilepic>
                     </div>
@@ -71,7 +76,7 @@
 
                 <!-- Profile Description -->
                 <div class="userDesc">
-                    <p data-description>This profile has no bio</p>
+                    <p data-description>This Profile Has No Bio</p>
                 </div>
 
                 <!-- User Stats  -->
@@ -94,7 +99,7 @@
                 <div class="social-container">
                     <div class="socialInfo">
                         <img src="./assets/location-icon.svg" alt="Location">
-                        <a href="" data-location>Not Available</a>
+                        <a data-location>Not Available</a>
                     </div>
                     <div class="socialInfo">
                         <img src="./assets/website-icon.svg" alt="Website">
@@ -106,7 +111,7 @@
                     </div>
                     <div class="socialInfo">
                         <img src="./assets/company-icon.svg" alt="Company">
-                        <a href="" data-company>Not Available</a>
+                        <a data-company>Not Available</a>
                     </div>
                 </div>
 
