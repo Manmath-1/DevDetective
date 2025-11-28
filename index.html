@@ -5,30 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevDetective</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
     <link rel="manifest" href="./assets/site.webmanifest" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -49,79 +35,80 @@
             </header>
 
             <main>
-            <!-- Searching  -->
-            <form class="search-container" data-searchForm >
-                <input type="text" placeholder="Enter a Github Username" data-input id="input" required autofocus>
-                <div class="error">
-                    <p id="noResults" data-noresult>No Search Results</p>
-                </div>
-                <button class="btn-search">Search</button>
-            </form>
-
-            <!-- UserInfo -->
-            <div class="userInfo-container">
-                <!-- Image , profileName, Joining -->
-                <div class="profileInfo">
-                    <div class="imgInfo">
-                        <img src="" alt="" loading="lazy" data-profilepic>
+                <!-- Searching  -->
+                <form class="search-container" data-searchForm>
+                    <input type="text" placeholder="Enter a Github Username" data-input id="input" required autofocus>
+                    <div class="error">
+                        <p id="noResults" data-noresult>No Search Results</p>
                     </div>
-                    <div class="profileName">
-                        <div class="nameInfo">
-                            <h2 data-name></h2>
-                            <a href="" target="_blank" rel="noopener noreferrer" data-username></a>
+                    <button class="btn-search">Search</button>
+                </form>
+
+                <!-- UserInfo -->
+                <div class="userInfo-container">
+                    <!-- Image , profileName, Joining -->
+                    <div class="profileInfo">
+                        <div class="imgInfo">
+                            <img src="" alt="" loading="lazy" data-profilepic>
                         </div>
-                        <p data-joining></p>
+                        <div class="profileName">
+                            <div class="nameInfo">
+                                <h2 data-name></h2>
+                                <a href="" target="_blank" rel="noopener noreferrer" data-username></a>
+                            </div>
+                            <p data-joining></p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Profile Description -->
-                <div class="userDesc">
-                    <p data-description>This Profile Has No Bio</p>
-                </div>
+                    <!-- Profile Description -->
+                    <div class="userDesc">
+                        <p data-description>This Profile Has No Bio</p>
+                    </div>
 
-                <!-- User Stats  -->
-                <div class="stats-container">
-                    <div class="statsInfo">
-                        <p>Repos</p>
-                        <a href="" data-repo></a>
+                    <!-- User Stats  -->
+                    <div class="stats-container">
+                        <div class="statsInfo">
+                            <p>Repos</p>
+                            <a href="" data-repo></a>
+                        </div>
+                        <div class="statsInfo">
+                            <p>Followers</p>
+                            <a href="" data-followers></a>
+                        </div>
+                        <div class="statsInfo">
+                            <p>Following</p>
+                            <a href="" data-following></a>
+                        </div>
                     </div>
-                    <div class="statsInfo">
-                        <p>Followers</p>
-                        <a href="" data-followers></a>
-                    </div>
-                    <div class="statsInfo">
-                        <p>Following</p>
-                        <a href="" data-following></a>
-                    </div>
-                </div>
 
-                <!-- User Social Media and other details -->
-                <div class="social-container">
-                    <div class="socialInfo">
-                        <img src="./assets/location-icon.svg" alt="Location">
-                        <a data-location>Not Available</a>
+                    <!-- User Social Media and other details -->
+                    <div class="social-container">
+                        <div class="socialInfo">
+                            <img src="./assets/location-icon.svg" alt="Location">
+                            <a data-location>Not Available</a>
+                        </div>
+                        <div class="socialInfo">
+                            <img src="./assets/website-icon.svg" alt="Website">
+                            <a href="" data-website>Not Available</a>
+                        </div>
+                        <div class="socialInfo">
+                            <img src="./assets/twitter-icon.svg" alt="Twitter">
+                            <a href="" data-twitter>Not Available</a>
+                        </div>
+                        <div class="socialInfo">
+                            <img src="./assets/company-icon.svg" alt="Company">
+                            <a data-company>Not Available</a>
+                        </div>
                     </div>
-                    <div class="socialInfo">
-                        <img src="./assets/website-icon.svg" alt="Website">
-                        <a href="" data-website>Not Available</a>
-                    </div>
-                    <div class="socialInfo">
-                        <img src="./assets/twitter-icon.svg" alt="Twitter">
-                        <a href="" data-twitter>Not Available</a>
-                    </div>
-                    <div class="socialInfo">
-                        <img src="./assets/company-icon.svg" alt="Company">
-                        <a data-company>Not Available</a>
-                    </div>
-                </div>
 
-            </div>
+                </div>
             </main>
 
         </div>
     </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 
-<!-- JS -->
-<script src="script.js"></script>
 </html>
